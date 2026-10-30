@@ -1,11 +1,11 @@
 ﻿# ForestPulse-3D: Autonomous Telemetry & Predictive Eco-Wildfire Observatory
 
-[![Live Demo](https://img.shields.io/badge/Live%20Observatory-Active-059669?style=for-the-badge&logo=fastapi&logoColor=white)](https://deca-5-116-248-223.ngrok-free.app)
-[![Satellite Telemetry](https://img.shields.io/badge/Satellite%20Stream-NASA%20FIRMS%20VIIRS-dc2626?style=for-the-badge&logo=nasa&logoColor=white)](https://firms.modaps.eosdis.nasa.gov/)
-[![Spatial Precision](https://img.shields.io/badge/Boundary%20Precision-ESA%20WorldCover%2010m-0284c7?style=for-the-badge)](https://esa-worldcover.org/)
-[![Status](https://img.shields.io/badge/Production-Passing%2025%20Tests-success?style=for-the-badge)](https://github.com/fazeli1977-dot/ForestPulse-3D-Docs)
+[![Live Observatory](https://img.shields.io/badge/LIVE%20OBSERVATORY-ACTIVE-00b894?style=for-the-badge&logo=satellite)](https://deca-5-116-248-223.ngrok-free.app)
+[![NASA Satellite Stream](https://img.shields.io/badge/NASA%20SATELLITE%20STREAM-NASA%20FIRMS%20VIIRS-d63031?style=for-the-badge&logo=nasa)](https://firms.modaps.eosdis.nasa.gov/)
+[![Boundary Precision](https://img.shields.io/badge/BOUNDARY%20PRECISION-ESA%20WORLDCOVER%2010M-0984e3?style=for-the-badge)](https://worldcover2021.esa.int/)
+[![Production Status](https://img.shields.io/badge/PRODUCTION-PASSING%2025%20TESTS-55efc4?style=for-the-badge&logo=pytest)](https://github.com/fazeli1977-dot/ForestPulse-3D-Docs)
 
-> **ForestPulse-3D** is an industrial-grade, cloud-native planetary monitoring telemetry platform engineered for real-time ecological stress tracking, active thermal anomaly detection, and predictive wildfire early warning. 
+**ForestPulse-3D** is an industrial-grade, cloud-native planetary monitoring telemetry platform engineered for real-time ecological stress tracking, active thermal anomaly detection, and predictive wildfire early warning. 
 
 Originally calibrated across the **UNESCO World Heritage Hyrcanian Mixed Forests (Iran-Azerbaijan eco-corridor)**, the engine is built on an extensible micro-tessellation paradigm designed to scale globally to boreal, temperate, and tropical forest reserves worldwide.
 
@@ -14,112 +14,127 @@ Originally calibrated across the **UNESCO World Heritage Hyrcanian Mixed Forests
 ## 🌐 Public Live Telemetry Access
 
 Experience the real-time interactive observatory directly in your browser:
+
 * **Interactive Live Dashboard:** [https://deca-5-116-248-223.ngrok-free.app](https://deca-5-116-248-223.ngrok-free.app)
 * *Authentication Note:* Public telemetry bypasses credentials and operates in interactive observatory mode.
 
 ---
 
-## 🌟 Executive Architectural Overview
+## 📸 Platform Telemetry Showcase
+
+<p align="center">
+  <img src="hero_dashboard.png" alt="ForestPulse-3D Master Dashboard" width="100%" />
+  <br><em>Figure 1: Full-spectrum 3D biophysical monitoring suite displaying real-time synoptic canopy health and thermodynamic indicators.</em>
+</p>
+
+<p align="center">
+  <img src="monitoring_network.png" alt="Monitoring Network & Regional Telemetry" width="100%" />
+  <br><em>Figure 2: Hyrcanian regional telemetry matrix and synoptic micro-climatic distribution network.</em>
+</p>
+
+<p align="center">
+  <img src="telemetry_matrix.png" alt="Real-time Telemetry Stand Matrix" width="100%" />
+  <br><em>Figure 3: Multi-sensor vegetative health parameters, Foehn wind alerts, and live risk index mapping.</em>
+</p>
+
+<p align="center">
+  <img src="dashboard_review.png" alt="Platform Command & Validation View" width="100%" />
+  <br><em>Figure 4: Global telemetry operations control console showing sub-kilometer canopy validation.</em>
+</p>
+
+---
+
+## ☀️ Executive Architectural Overview
 
 ForestPulse-3D integrates near-real-time satellite active fire products with local synoptic climatology, sub-kilometer topographic elevation models, and verified vegetative boundary masks to compute continuous thermodynamic burn potentials.
-±---------------------------------------+
 
-| NASA FIRMS VIIRS/MODIS Telemetry Stream|
+```text
++-------------------------------------------------------------+
+|              NASA FIRMS VIIRS/MODIS Telemetry               |
+|            (Near-Real-Time Thermal Hotspot Stream)          |
++------------------------------+------------------------------+
+                               |
+                               v
++------------------------------+------------------------------+
+|   Synoptic Climatology       |      ESA WorldCover 2021     |
+|   (Foehn / RH / Open-Meteo)  |      (10m Resolution Canopy) |
++------------------------------+------------------------------+
+                               |
+                               v
++-------------------------------------------------------------+
+|                ForestPulse-3D Core Engine                   |
+|   [ Real-Time FHI Assessment ]  [ Dynamic Sector Matrix ]   |
++-------------------------------------------------------------+
+                               |
+                               v
++-------------------------------------------------------------+
+|    Calculated Forest Health Index & Micro-Zone Early Warning|
++-------------------------------------------------------------+
 
-±------------------±-------------------+
+---
 
-| (Near-Real-Time Thermal Hotspots)
+## 🚀 Key Functional Capabilities
 
-v
+1. **Dual-Band Active Thermal Detection (NASA VIIRS NOAA-20 / NOAA-21):**
+   * Direct near-real-time ingestion of active thermal anomalies with sub-pixel Fire Radiative Power (FRP) metrics.
+   * **Topological Land-Cover Validation:** Raw thermal returns are filtered through high-resolution canopy masks (ESA WorldCover Class 10), eliminating false positives from adjacent arid soils or industrial emissions.
 
-±-------------------------+ ±---------±----------+ ±-------------------------+
+2. **Synoptic Micro-Climate & Foehn Wind Vectoring:**
+   * **Thermodynamic Wind Vectoring:** Real-time detection of high-risk katabatic and Foehn wind phenomena traversing mountain passes into heavily forested valleys.
+   * **Continuous Synoptic Polling:** Dynamic indexing of vapor pressure deficit (VPD), relative humidity drops, and localized thermal spikes.
 
-| Synoptic Climatology | -----> | ForestPulse-3D | <----- | ESA WorldCover 2021 |
+3. **Forest Health Index (FHI) & Eco-Stress Modeling:**
+   * **Multi-Dimensional Stress Formula:** Integrates localized canopy drought indices, slope exposure, ambient temperature, and vegetative moisture stress into a standardized risk matrix:
+     $$\text{FHI} = \Phi(S_{\text{thermal}}, V_{\text{canopy}}, \Delta T_{\text{foehn}})$$
+   * **Predictive Alert Zones:** Renders real-time early warning perimeters before visual ignition reaches catastrophic thresholds.
 
-| (Foehn / RH / Open-Meteo)| | Analytical Engine | | (10m Resolution Canopy) |
+4. **Pan-Global Multi-Zone Architecture:**
+   While currently demonstrated across 15 mission-critical Hyrcanian forest sectors (from Golestan National Park to the Arasbaran ecotone), the coordinate abstraction model allows immediate expansion to:
+   * Mediterranean Maquis & Iberian Pine forests
+   * Pacific Northwest Temperate Rainforests
+   * Amazonian & Indonesian Tropical Peatland ecosystems
 
-±-------------------------+ ±---------±----------+ ±-------------------------+
+---
 
-|
+## 🗺️ Monitored Operational Zones (Hyrcanian Ecoregion)
 
-±------------------------±------------------------+
-
-v v
-
-[ Real-Time FHI Assessment ] [ Dynamic Sector Stress Matrix ]
-
-Calculated Forest Health Index & Continuous micro-zone scan evaluating
-
-topographic wind channeling risks altitude gradients & canopy fuel loads
-
-🚀 Key Functional Capabilities
-1. Dual-Band Active Thermal Detection
-NASA VIIRS (NOAA-20 / NOAA-21) Stream: Direct near-real-time ingestion of active thermal anomalies with sub-pixel Fire Radiative Power (FRP) metrics.
-Topological Land-Cover Validation: Raw thermal returns are filtered through high-resolution canopy masks (ESA WorldCover Class 10), eliminating false positives from adjacent arid soils or industrial thermal emissions.
-2. Synoptic Micro-Climate & Foehn Wind Vectoring
-Thermodynamic Wind Vectoring: Real-time detection of high-risk katabatic and Foehn wind phenomena traversing mountain passes into heavily forested valleys.
-Continuous Synoptic Polling: Dynamic indexing of vapor pressure deficit (VPD), relative humidity drops, and localized thermal spikes.
-3. Forest Health Index (FHI) & Eco-Stress Modeling
-Multi-Dimensional Stress Formula: Integrates localized canopy drought indices, slope exposure, ambient temperature, and vegetative moisture stress into a standardized risk matrix:
-FHI
-=
-Φ
-(
-𝑆
-thermal
-,
-𝑉
-canopy
-,
-Δ
-𝑇
-foehn
-)
-FHI=Φ(S 
-thermal
-​
- ,V 
-canopy
-​
- ,ΔT 
-foehn
-​
- )
-Predictive Alert Zones: Renders real-time early warning perimeters before visual ignition reaches catastrophic thresholds.
-4. Pan-Global Multi-Zone Architecture
-While currently demonstrated across 15 mission-critical Hyrcanian forest sectors (from Golestan National Park to the Arasbaran ecotone), the coordinate abstraction model allows immediate expansion to:
-
-Mediterranean Maquis & Iberian Pine forests
-Pacific Northwest Temperate Rainforests
-Amazonian & Indonesian Tropical Peatland ecosystems
-🛰️ Monitored Operational Zones (Hyrcanian Ecoregion)
 The platform continuously surveys 15 sensitive biodiversity reserves:
 
+| Zone Code | Region Name | Coordinates (Centroid) | Primary Biome Characteristics |
+| :--- | :--- | :--- | :--- |
+| **GOL-01** | Golestan National Park | 37.38° N, 55.72° E | Deciduous transition canopy, high Foehn vulnerability |
+| **MAZ-04** | Kojoor & Central Alborz | 36.42° N, 51.68° E | Steep vertical elevation gradients, old-growth beech |
+| **GIL-08** | Talesh & Siahkal Ridge | 37.06° N, 49.88° E | High biomass density, maritime-cloud condensation belt |
+| **ARA-15** | Arasbaran Biosphere | 38.86° N, 46.85° E | Sub-humid Caucasian hornbeam & endemic relict oak |
 
-Zone CodeRegion NameCoordinates (Centroid)Primary Biome Characteristics
-GOL-01Golestan National Park37.38° N, 55.72° EDeciduous transition canopy, high Foehn vulnerability
-MAZ-04Kojoor & Central Alborz36.42° N, 51.68° ESteep vertical elevation gradients, old-growth beech
-GIL-08Talesh & Siahkal Ridge37.06° N, 49.88° EHigh biomass density, maritime-cloud condensation belt
-ARA-15Arasbaran Biosphere38.86° N, 46.85° ESub-humid Caucasian hornbeam & endemic relict oak
-💻 Tech Stack & Performance Engineering
+---
+
+## 💻 Tech Stack & Performance Engineering
+
 ForestPulse-3D is architected for millisecond response times on both workstation displays and low-bandwidth mobile devices:
 
-Core Analytical Backend: Asynchronous Python (FastAPI, Pydantic, HTTPX client pooling).
-Spatial & GIS Processing: GeoJSON spatial indexation, Shapely vector math, boundary hull generation.
-Visualization Layer: Responsive WebGL-accelerated Leaflet engine, localized Persian & English i18n support, dynamic telemetry cards.
-Reliability: Built-in resilient caching proxies for upstream satellite APIs, ensuring 100% uptime even during satellite feed renegotiation.
-🔒 Security & Intellectual Property Notice
-This repository represents the official documentation, system architecture, and public interface registry for ForestPulse-3D.
+* **Core Analytical Backend:** Asynchronous Python (FastAPI, Pydantic, HTTPX client pooling).
+* **Spatial & GIS Processing:** GeoJSON spatial indexation, Shapely vector math, boundary hull generation.
+* **Visualization Layer:** Responsive WebGL-accelerated Leaflet engine, localized Persian & English i18n support, dynamic telemetry cards.
+* **Reliability:** Built-in resilient caching proxies for upstream satellite APIs, ensuring 100% uptime even during satellite feed renegotiation.
+
+---
+
+## 🔒 Security & Intellectual Property Notice
+
+This repository represents the **official documentation, system architecture, and public interface registry** for ForestPulse-3D. 
 
 The core algorithmic pipelines, machine learning feature weights, and proprietary boundary generation scripts are maintained within private operational repositories to prevent unauthorized commercial exploitation and safeguard vital ecological telemetry infrastructure.
 
 For enterprise API access, commercial integration, or academic research collaboration, please contact the maintainer.
 
-👤 Project Leadership & Maintainer
-Lead Architect: Alireza Fazeli
-Contact: alirezafazeli@live.com
-GitHub Organization: @fazeli1977-dot
-📄 License & Attribution
-Satellite thermal telemetry provided through the NASA Earth Observing System Data and Information System (EOSDIS) FIRMS.
-Land cover canopy baselines derived from ESA WorldCover 2021 / European Space Agency.
-System Architecture & Design © 2026 Alireza Fazeli. All rights reserved.
+---
+
+## 👤 Project Leadership & Maintainer
+
+* **Lead Architect:** Alireza Fazeli
+* **Contact:** [alirezafazeli@live.com](mailto:alirezafazeli@live.com)
+* **GitHub Organization:** [@fazeli1977-dot](https://github.com/fazeli1977-dot)
+* **License & Attribution:** Satellite thermal telemetry provided through the NASA Earth Observing System Data and Information System (EOSDIS) FIRMS. Land cover canopy baselines derived from ESA WorldCover 2021 / European Space Agency.
+
+*System Architecture & Design © 2026 Alireza Fazeli. All rights reserved.*
