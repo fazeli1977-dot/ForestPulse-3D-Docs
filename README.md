@@ -139,4 +139,4 @@ For enterprise API access, commercial integration, or academic research collabor
 * **GitHub Organization:** [@fazeli1977-dot](https://github.com/fazeli1977-dot)
 * **License & Attribution:** Satellite thermal telemetry provided through the NASA Earth Observing System Data and Information System (EOSDIS) FIRMS. Land cover canopy baselines derived from ESA WorldCover 2021 / European Space Agency.
 
-*System Architecture & Design © 2026 Alireza Fazeli. All rights reserved.*
+*System Architecture & Design © 2026 Alireza Sani. All rights reserved.*
