@@ -71,6 +71,8 @@ ForestPulse-3D integrates near-real-time satellite active fire products with loc
 |    Calculated Forest Health Index & Micro-Zone Early Warning|
 +-------------------------------------------------------------+
 
+```
+
 ---
 
 ## 🚀 Key Functional Capabilities
